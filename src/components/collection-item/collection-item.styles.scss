@@ -20,6 +20,14 @@
     position: absolute;
     top: 255px;
     display: none;
+    @media screen and (max-width: 800px) {
+      display: flex;
+      opacity: 0.9;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 40vw;
   }
 
   &:hover {
