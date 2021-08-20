@@ -10,7 +10,7 @@ import {
   convertCollectionsSnapshotToMap,
 } from '../../firebase/firebase.utils';
 
-import './shop.styles.scss';
+import { ShopContainer } from './shop.styles';
 
 const CollectionsOverviewWithSpinner = WithSpinner(CollectionOverview);
 const CollectionPageWithSpinner = WithSpinner(CollectionPage);
@@ -36,7 +36,7 @@ class ShopPage extends React.Component {
     const { match } = this.props;
     const { loading } = this.state;
     return (
-      <div className="shop-page">
+      <ShopContainer>
         <Route
           exact
           path={`${match.path}`}
@@ -50,7 +50,7 @@ class ShopPage extends React.Component {
             <CollectionPageWithSpinner isLoading={loading} {...props} />
           )}
         />
-      </div>
+      </ShopContainer>
     );
   }
 }

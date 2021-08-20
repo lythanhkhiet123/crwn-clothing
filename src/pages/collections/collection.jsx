@@ -9,7 +9,6 @@ import {
   TitleContainer,
   ItemsContainer,
 } from './collection.styles';
-import './collection.scss';
 
 const CollectionPage = ({ collections }) => {
   const { title, items } = collections;
